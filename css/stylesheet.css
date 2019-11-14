@@ -9,6 +9,12 @@ h2,h3{
     text-align: center;
     font-size: 3em;
 }
+li{
+  list-style: none;
+}
+.text{
+  display: none;
+}
 .image{
     width: 400px;
 }
@@ -30,13 +36,33 @@ h5{
     padding-top: 50px;
     margin-top: 70px;
 }
-/*.wrapper{
-    background-color: black;
+/* #basic{
+  background: url(../images/basic.png);
+  background-size: cover;
+  transition: background 0.5s ease;
+} */
+/* .card{
+  background-size: cover; 
 }*/
-.pp-background {
-	background: rgba(0,0,0,0.7);/* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(0,0,0,0.7), #605C3C, #3C3B3F); 
-    background: linear-gradient(to right, rgba(0,0,0,0.7), #605C3C, #3C3B3F);
-	padding: 10px;
-    z-index: 1;
+ .card img{
+
+}
+/*
+#prem{
+  background: url(../images/prem.png);
+  background-size: cover;
+}
+#prem:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party.jpg);
+}
+#inter:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party1.jpg);
+}
+#basic:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party2.jpg);
+
+} */
+#select{
+  width: fit-content;
+  transition: background 0.5 ease;
 }
