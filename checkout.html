@@ -46,7 +46,7 @@
                 <br>
               </ol>
             </div>
-            <button type="button" class="btn btn-success">Choose ksh 35000</button>
+            <button id="base" type="button" class="btn btn-success" onclick="basic();">Choose ksh 35000</button>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 col-sm-10 p-1 mx-auto">
@@ -62,7 +62,7 @@
                 <li>Mixologist</li>
               </ol>
             </div>
-            <button class="btn btn-success">Choose ksh 65000</button>
+            <button id="intermediate" class="btn btn-success" onclick="inter();">Choose ksh 65000</button>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 col-sm-10 p-1 mx-auto">
@@ -78,7 +78,7 @@
                 <li>Mixologist</li>
               </ol>
             </div>
-            <button class="btn btn-success">Choose ksh 95000</button>
+            <button id="premium" class="btn btn-success" onclick="prem();">Choose ksh 95000</button>
           </div>
         </div>
       </div>
@@ -121,6 +121,7 @@
             </div>
           </form>
         </div>
+ 
         <div class="col-md-6">
           <div id="display" class="card">
             <div class="card-header bg-dark">
@@ -140,6 +141,42 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" id="book-now">
+      <h2 class="h1-responsive font-weight-bold text-center my-4">BOOK NOW</h2>
+      <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="book-now" name="book-now">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="booking-name" name="booking-name" class="form-control">
+                            <label for="booking-name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="booking-email" name="booking-email" class="form-control" required>
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="booking-message" name="booking-message" placeholder="Specify anything else..." rows="2"
+                                class="form-control md-textarea" required></textarea>
+                            <label for="message">Additional Information </label>
+                        </div>
+                        <button type="submit" id="submit-bookings" class="btn btn-info">Submit
+                            </button>
+                    </div>
+                    <div class="booking-confirmation-message">Your message has been sent</div>
+                </div>
+                <div class="text-center text-md-left">
+            </form>
+        </div>
+        <div class="status"></div>
     </div>
   </div>
 </body>

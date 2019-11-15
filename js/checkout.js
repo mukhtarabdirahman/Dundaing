@@ -20,6 +20,24 @@ function choose() {
     document.getElementById("venu").innerHTML = ("venue Ksh: 30000")
   }
 }
+function basic() {
+  alert("you have chosen the Basic package at ksh 35000")
+  document.getElementById("base").disabled = true;
+  document.getElementById("intermediate").disabled = true;
+  document.getElementById("premium").disabled = true;
+}
+function inter() {
+  alert("you have chosen the Intermediate package at ksh 65000")
+  document.getElementById("base").disabled = true;
+  document.getElementById("premium").disabled = true;
+  document.getElementById("intermediate").disabled = true;
+}
+function prem() {
+  alert("you have chosen the Premium package at ksh 85000")
+  document.getElementById("premium").disabled = true;
+  document.getElementById("intermediate").disabled = true;
+  document.getElementById("base").disabled = true;
+}
 $(document).ready(function () {
   $("form#custom").submit(function (event) {
     event.preventDefault();
