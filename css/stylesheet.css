@@ -9,6 +9,12 @@ h2,h3{
     text-align: center;
     font-size: 3em;
 }
+li{
+  list-style: none;
+}
+.text{
+  display: none;
+}
 .image{
     width: 400px;
 }
@@ -30,6 +36,18 @@ h5{
     padding-top: 50px;
     margin-top: 70px;
 }
+/* #basic{
+  background: url(../images/basic.png);
+  background-size: cover;
+  transition: background 0.5s ease;
+} */
+/* .card{
+  background-size: cover; 
+}*/
+ .card img{
+
+ }
+
 body{
     background-color: black;
     
@@ -54,4 +72,26 @@ html {
     color:black;
     margin-bottom: 5px;
     display: none;
+}
+/*
+#prem{
+  background: url(../images/prem.png);
+  background-size: cover;
+}
+#prem:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party.jpg);
+}
+#inter:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party1.jpg);
+}
+#basic:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/party2.jpg);
+
+} */
+#select{
+  width: fit-content;
+  transition: background 0.5 ease;
+}
+#display{
+  text-align: center;
 }
